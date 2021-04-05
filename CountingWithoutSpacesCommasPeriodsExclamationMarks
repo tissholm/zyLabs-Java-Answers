@@ -13,4 +13,5 @@ Scanner scnr = new Scanner(System.in);
          Amount++;
          }
       }
+       System.out.println(Amount);
 }
