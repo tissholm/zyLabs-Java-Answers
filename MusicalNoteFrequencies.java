@@ -13,8 +13,6 @@ public class LabProgram {
       double freFour;
       
       frequency = scnr.nextDouble();
-      
-      
       res = Math.pow(2, (1.0/12.0));
       
       freOne = frequency * Math.pow(res, 1);
