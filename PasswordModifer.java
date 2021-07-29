@@ -2,24 +2,18 @@ import java.util.Scanner;
 
 public class LabProgram {
    public static void main(String[] args) {
-        Scanner scnr = new Scanner (System.in);
-        String userPassword;
-        String userPasswordStronger = "";
-        String exclamationMark;
-        
-        userPassword = scnr.nextLine();
-        
-         userPasswordStronger = userPassword.replace('i', '1');
-         userPasswordStronger = userPasswordStronger.replace('a', '@');
-         userPasswordStronger = userPasswordStronger.replace('m', 'M');
-         userPasswordStronger = userPasswordStronger.replace('B', '8');
-         userPasswordStronger = userPasswordStronger.replace('s', '$');
-         
-         exclamationMark = "!";
-         
-         userPasswordStronger = userPasswordStronger.concat(exclamationMark);
+      /* Type your code here. */
 
-         System.out.println(userPasswordStronger);
-          
+      Scanner scnr = new Scanner(System.in); //create an instance of scanner 
+      String initialPass = scnr.nextLine(); 
+
+      initialPass = initialPass.replace("i", "1"); 
+      initialPass = initialPass.replace("a", "@"); 
+      initialPass = initialPass.replace("m", "M"); 
+      initialPass = initialPass.replace("B", "8"); 
+      initialPass = initialPass.replace("s", "$"); 
+      initialPass += "!";
+      System.out.println(initialPass);
+
    }
 }
